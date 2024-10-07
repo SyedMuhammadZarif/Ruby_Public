@@ -75,3 +75,21 @@ puts "#{GREETING}, #{name}!"  # Interpolation
 puts"Enter your Age: "
 age = gets.chomp.to_i
 puts"you are #{age} years old!"
+
+#Booleans are very basic used true or false to denote
+
+hungry = true
+thirsty = false
+
+puts hungry #returns bool
+
+# Nil
+result = nil
+
+puts result.nil?                # Output: true
+puts result.to_s                # Output: ""
+
+# Assigning nil to a variable
+value = "some value"
+value = nil                     # Now value is nil
+puts value.nil?                # Output: true

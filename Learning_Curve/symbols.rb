@@ -22,4 +22,4 @@ user_info.each {|k,v| puts "#{k}: #{v}"}
 string1 = "Apple"
 symbol1 = :Apple
 
-puts string1==symbol1.to_s #this will give false
+puts string1==symbol1.to_s #this will give false without the to_s (to string)
