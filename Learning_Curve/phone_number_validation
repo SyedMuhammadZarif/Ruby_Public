@@ -1,0 +1,8 @@
+phone_number = "123-456-7890"
+phone_regex = /\A\d{3}-\d{3}-\d{4}z/ #A anchors to beginning Z anchors the end
+
+if phone_number =~ phone_regex
+  puts "Valid phone number."  # Output: Valid phone number.
+else
+  puts "Invalid phone number."
+end

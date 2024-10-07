@@ -12,11 +12,12 @@ end
 
 class Calculator
   extend Multiplication  # Use extend to add module methods as class methods
-  include Addition
-  extend Addition
+  include Addition#this is for instance
+  extend Addition#this is for direct class call
 end
 
 calc = Calculator.new
+
 calc.add(2,3)
 
 

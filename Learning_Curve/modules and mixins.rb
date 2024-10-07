@@ -60,3 +60,5 @@ cat = Animals_m::Cat.new
 # Call methods from the classes
 dog.bark  # Output: Woof!
 cat.meow  # Output: Meow!
+
+

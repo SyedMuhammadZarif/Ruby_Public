@@ -1,0 +1,3 @@
+text = "I love Ruby programming!"
+new_text = text.gsub(/Ruby/, "Java")  # Replace "Ruby" with "Python"
+puts new_text  # Output: I love Python programming!
