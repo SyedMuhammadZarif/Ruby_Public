@@ -25,5 +25,7 @@ puts person1.inspect
 #iteration
 puts "\n\nInfo Available: "
 person1.each { |k,v| puts "#{k}: #{v}"}
+#quick view of keys and values
 puts person1.keys.inspect
 puts person1.values.inspect
+
