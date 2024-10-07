@@ -20,6 +20,11 @@ newarr.pop
 puts
 print newarr
 puts
+
 #iteration
 fruits = ["apple", "banana", "cherry"]
-fruits.each {|fruit| print "#{fruit} "}
+fruits.each {|fruit| print "#{fruit} "} #iteration loop
+selected_fruits = fruits.select { |index| index.start_with?("b")}
+puts "\n#{selected_fruits}" #print array of selected
+selected_fruits.each {|idx| print "#{idx} "} #print elements of selected
+
