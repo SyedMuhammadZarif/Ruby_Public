@@ -103,3 +103,89 @@ myproc = Proc.new{|piza| pizzachecker2(piza)} #using procs
 
 newpizza = Pizza2.new(toppings: "Mushroom and Beef") {|piza| myproc.call(piza)} #proc must be passed inside a block 
 #would say this is the best method, it is the most flexible, hence always use keyword args
+
+
+#class methods!:
+class MathOperations
+  def self.add(a, b)
+    a + b
+  end
+end
+
+puts MathOperations.add(5, 3)  # Output: 8
+
+#INHERITANCE!!!!
+class Animal
+  def speak
+    puts "I am an animal."
+  end
+  def breathe
+    puts "*inhales and exhales*"
+  end
+end
+
+class Dog < Animal
+  def speak
+    print "Woof! I am a dog."
+  end
+end
+
+dog = Dog.new
+dog.speak  # Output: Woof! I am a dog. #this is method overriding
+dog.breathe#inherited method
+
+#modules and mixins
+
+#Modules are used to group related methods and can be included in classes to share functionality.
+
+module Abilities_fish
+  def swim
+    puts"Look at me I can swim!"
+  end
+end
+
+class Fish < Animal
+  include Abilities_fish
+end
+
+goldie = Fish.new
+goldie.swim
+goldie.speak
+
+class Person
+  def initialize(name = "Bro")
+    @name = name
+  end
+  
+  def public_method
+    puts "This is a public method."
+  end
+  
+  private
+  
+  def private_method
+    puts "This is a private method."
+  end
+  
+  protected
+  
+  def protected_method
+    puts "This is a protected method."
+  end
+end
+
+person = Person.new("Alice")
+person.public_method  # Output: This is a public method.
+#person.private_method  # Raises an error
+#person.protected_method  # Raises an error
+
+class Person2 < Person
+  
+  def broski
+    puts"#{protected_method}"
+  end
+end
+
+pperson2 = Person2.new
+pperson2.broski
+
