@@ -105,3 +105,4 @@ text = "The numbers are 42, 56, and 78."
 numbers = text.scan(/\d+/)  # \d+ matches one or more digits
 puts numbers.inspect  # Output: ["42", "56", "78"]
 
+#verifying email with regex

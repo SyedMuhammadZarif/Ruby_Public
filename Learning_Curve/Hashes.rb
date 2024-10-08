@@ -1,7 +1,7 @@
 #hash creation, it is like dictionary
 
 person1 = {
-  Name: "Syed",
+  Name: nill,
   Age: 23,
   Grade: 3.12,
   Hobby: "learning new programming languAges"
