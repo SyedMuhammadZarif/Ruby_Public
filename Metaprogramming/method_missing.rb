@@ -5,7 +5,7 @@ class Person
 
   def method_missing(method_name, *args)
     if method_name.to_s =~ /=$/  # Checks for a setter
-      attribute = method_name.to_s[0..-1]  # Remove the '='
+      attribute = method_name.to_s[0..-2]  # Remove the '=', up to the second last character
       @attributes[attribute.to_sym] = args.first
     else
       @attributes[method_name.to_sym]  # Retrieve the value

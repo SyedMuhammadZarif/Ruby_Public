@@ -12,7 +12,7 @@ class Example
   end
 
   def respond_to_missing?(method_name, include_private = false)
-    method_name == :dynamic_method || super
+    method_name == :dynamic_method || super#if the method name matches certain criteria it is allowed to be dynamically created
   end
 end
 

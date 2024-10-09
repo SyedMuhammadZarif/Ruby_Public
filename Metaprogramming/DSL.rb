@@ -28,6 +28,7 @@ class TaskManager
   end
 end
 
+#anything can be added to the block, refer to this during projecs 
 manager = TaskManager.new
 manager.task :greet do puts "Hello!"end
 manager.task :goodbye do puts "Goodbye!!!"end

@@ -23,4 +23,3 @@ welcome.hello("Alice")
 
 welcome.send("secret_greet","Alice")
 #can be sybmol too like :secret_greet
-welcome.secret_greet("alice")
