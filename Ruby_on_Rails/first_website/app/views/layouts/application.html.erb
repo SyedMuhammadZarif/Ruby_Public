@@ -2,22 +2,52 @@
 <html>
   <head>
     <title><%= content_for(:title) || "First Website" %></title>
-    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
-
+    <link rel="icon" href="<%= asset_path('logo.ico') %>" type="image/x-icon">
     <%= yield :head %>
-
+    <style>
+        /* Custom styles for the background image */
+        .bg-custom {
+            background-image: url('https://wallpapers.com/images/hd/red-gradient-background-bqzcdqrqi3mlifk3.jpg'); /* Path to your image */
+            background-size: cover; /* Cover the entire area */
+            background-position: center; /* Center the image */
+        }
+        .bg-about {
+            background-image: url('<%=asset_path("about.png")%>'); /* Path to your image */
+            background-size: cover; /* Cover the entire area */
+            background-position: center; /* Center the image */
+        }
+    </style>
+    
+    <link rel="icon" href="<%= asset_path('logo.ico') %>" type="image/x-icon">
+    <link href="/assets/application.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
     <link rel="manifest" href="/manifest.json">
-    <link rel="icon" href="/icon.png" type="image/png">
-    <link rel="icon" href="/icon.svg" type="image/svg+xml">
+   
+    
     <link rel="apple-touch-icon" href="/icon.png">
+    <%= stylesheet_link_tag "tailwind", "inter-font", "data-turbo-track": "reload" %>
     <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
     <%= javascript_importmap_tags %>
+    <!--<%= image_tag "logo.png", class:"logo-class"%>!-->
+    <div class="flex justify-center mt-0">
+      <div class="p-10 justify-evenly ">
+        <%= link_to "Home", root_path, class: "rounded-full bg-black bg-opacity-10 text-red-800 p-4 mx-4 w-fit" %>
+        <%= link_to "About", about_path, class: "rounded-full bg-black bg-opacity-10 text-red-800 p-4 mx-4 w-fit" %>
+        <%= link_to "Contact", contact_path, class: "rounded-full bg-black bg-opacity-10 text-red-800 p-4 mx-4 w-fit" %>
+
+    </div>
+    </div>
+
+
   </head>
 
   <body>
-    <%= yield %>
+    <main class="flex w-screen h-screen justify-center items-center  ">
+      <%= yield %>
+    </main>
   </body>
 </html>
