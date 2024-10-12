@@ -1,0 +1,15 @@
+<div class="flex justify-between items-center fixed bg-white bg-opacity-10 mt-0 w-full">
+  
+  <!-- Left-aligned "My First Site" button -->
+  <div class="p-10">
+    <%= link_to "My First Site", root_path, class: "text-white bg-gray-700 bg-custom rounded-xl p-4 mx-4 w-fit" %>
+  </div>
+  
+  <!-- Center-aligned "Home", "About", and "Contact" buttons -->
+  <div class="absolute left-1/2 transform -translate-x-1/2 p-10 flex space-x-4">
+    <%= link_to "Task Manager", posts_path, class: "rounded-full bg-black text-red-800 p-4 w-fit" %>
+    <%= link_to "About", about_path, class: "rounded-full bg-black text-red-800 p-4 w-fit" %>
+    <%= link_to "Contact", contact_path, class: "rounded-full bg-black text-red-800 p-4 w-fit" %>
+  </div>
+
+</div>

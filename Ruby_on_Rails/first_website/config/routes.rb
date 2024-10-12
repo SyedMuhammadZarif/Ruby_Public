@@ -1,7 +1,7 @@
 Rails.application.routes.draw do
-  get "pages/about"
-  get "pages/home"
-  get "pages/contact"
+  resources :posts
+  resources :titles
+
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
 
   # Reveal health status on /up that returns 200 if the app boots with no exceptions, otherwise 500.
@@ -16,5 +16,4 @@ Rails.application.routes.draw do
    root "pages#home"
    get 'about', to: 'pages#about'  # This defines the route for the About page
    get 'contact', to: 'pages#contact'
-   post 'food_logs', to: 'pages#create'  # Route to create food logs
 end

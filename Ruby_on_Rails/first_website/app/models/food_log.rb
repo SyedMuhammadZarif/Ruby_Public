@@ -1,2 +1,0 @@
-class FoodLog < ApplicationRecord
-end

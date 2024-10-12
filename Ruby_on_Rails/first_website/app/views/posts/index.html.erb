@@ -1,0 +1,24 @@
+<div class="w-full h-full bg-wave">
+  <% if notice.present? %>
+    <p class="py-2 px-3 bg-green-50 mb-5 text-green-500 font-medium rounded-lg inline-block" id="notice"><%= notice %></p>
+  <% end %>
+  <div class = "container mt-40 text-white mx-auto">
+    <% content_for :title, "To-Do List" %>
+
+      <div class="flex flex-row justify-between items-center">
+        <h1 class="font-bold text-4xl">To Do</h1><br>
+        <%= link_to "New Task", new_post_path, class: "rounded-lg py-3 px-5 bg-blue-600 text-white block font-medium" %>
+      </div>
+      
+      <div class = "flex flex-col items-center mt-20  bg-white bg-opacity-20 rounded-xl p-4 ">
+      <div id="posts" class="min-w-full ml-40 p-4">
+        <% @posts.each do |post| %>
+          <%= render post %>
+          <p>
+            <%= link_to "Show this Task", post, class: "rounded-lg mb-10 py-3 px-5 bg-gray-100 inline-block font-medium text-red-600" %>
+          </p>
+        <% end %>
+      </div>
+    </div>
+  </div>
+</div>
