@@ -4,7 +4,7 @@
 
 <h2>Project Screenshots:</h2>
 
-<img src="https://imgur.com/a/ruby-demo-v2idyNN"/>
+<img src="https://i.imgur.com/Ycjc7jX.gif"/>
 
   
   
