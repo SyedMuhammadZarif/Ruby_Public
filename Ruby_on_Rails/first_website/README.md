@@ -20,3 +20,4 @@ Technologies used in the project:
 *   Rails Frame Work
 *   Rails Scaffolding
 *   TailwindCSS (non-template)
+*   PostgreSQL
