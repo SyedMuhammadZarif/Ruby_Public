@@ -4,8 +4,7 @@
 
 <h2>Project Screenshots:</h2>
 
-<img src="https://i.imgur.com/Ycjc7jX.gif"/>
-
+<iframe src="https://drive.google.com/file/d/1jkbf8eChnrzFuHvweOgy4wwr_1gMvicM/preview" width="640" height="480" allow="autoplay"></iframe>
   
   
 <h2>🧐 Features</h2>
