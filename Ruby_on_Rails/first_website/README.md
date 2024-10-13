@@ -1,6 +1,6 @@
 <h1 align="center" id="title">Task Manager</h1><br>
 
-<p id="description">Created a basic CRUD with Ruby on Rails using Scaffolding and Devise</p>
+<p id="description">Created a basic CRUD with Ruby on Rails using Scaffolding</p>
 
 <h2>Project Screenshots:</h2>
 
