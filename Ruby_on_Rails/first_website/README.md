@@ -17,7 +17,7 @@
 Technologies used in the project:
 
 *   Ruby Programming Language
-*   Rails Framework
+*   Rails Framework with Embedded Ruby HTML
 *   Rails Scaffolding
 *   TailwindCSS (non-template)
 *   PostgreSQL
