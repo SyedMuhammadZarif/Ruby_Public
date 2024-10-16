@@ -20,6 +20,7 @@
 
 <h2>Features</h2>
 *   CRUD
+*   USER AUTHENTICATION AND LOGIN
 
 <h2>💻 Built with</h2>
 
