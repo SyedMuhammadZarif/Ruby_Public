@@ -19,8 +19,8 @@
 <img src = "https://i.imgur.com/mZ1y2qr.png">
 
 <h2>Features</h2>
-*   CRUD
-*   USER AUTHENTICATION AND LOGIN
+<p>CRUD</p>
+<p>USER AUTHENTICATION AND LOGIN</p>
 
 <h2>💻 Built with</h2>
 
