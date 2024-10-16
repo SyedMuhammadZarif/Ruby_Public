@@ -1,4 +1,4 @@
-<h1 align="center" id="title">Task Manager</h1><br>
+<h1 align="center" id="title">Blog Website</h1><br>
 
 <p id="description">Created a basic CRUD with Ruby on Rails using Scaffolding</p>
 
