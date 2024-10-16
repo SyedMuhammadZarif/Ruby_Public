@@ -1,24 +1,33 @@
-# README
+<h1 align="center" id="title">Task Manager</h1><br>
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+<p id="description">Created a basic CRUD with Ruby on Rails using Scaffolding</p>
 
-Things you may want to cover:
+<h2>Project Screenshots:</h2>
 
-* Ruby version
+<p>Home Page</p>
+<img src ="https://i.imgur.com/RQXC4Hm.png">
 
-* System dependencies
+<p>View Posts (you can view without logging in):</p>
+<p>You can see the username of who posted the content</p>
+<img src = "https://i.imgur.com/CLJqqwS.png">
+<img src = "https://i.imgur.com/AscZgwK.png">
 
-* Configuration
+<p>Signed Out</p> 
+<img src="https://i.imgur.com/Wp2n395.png">
 
-* Database creation
+<p>Viewing as another user/signed out user</p>
+<img src = "https://i.imgur.com/mZ1y2qr.png">
 
-* Database initialization
+<h2>Features</h2>
+*   CRUD
 
-* How to run the test suite
+<h2>💻 Built with</h2>
 
-* Services (job queues, cache servers, search engines, etc.)
+Technologies used in the project:
 
-* Deployment instructions
-
-* ...
+*   Ruby Programming Language
+*   Rails Framework with Embedded Ruby HTML
+*   Rails Scaffolding
+*   Rails Devise for user authentication and login
+*   TailwindCSS (non-template)
+*   PostgreSQL
