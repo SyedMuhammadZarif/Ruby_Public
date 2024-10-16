@@ -1,24 +1,29 @@
-# README
+<h1 align="center" id="title">Task Manager</h1><br>
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+<p id="description">Created a basic CRUD with Ruby on Rails using Scaffolding</p>
 
-Things you may want to cover:
+<h2>Project Screenshots:</h2>
 
-* Ruby version
+<img src ="https://i.imgur.com/TJ3dOwb.gif">
 
-* System dependencies
+<p>View a task:</p>
+<img src = "https://i.imgur.com/W3aZSZ3.gif">
 
-* Configuration
+<p>Add a new Task</p> 
+<img src="https://i.imgur.com/QqrsOQf.gif">
 
-* Database creation
+<p>Mark a task as done</p>
+<img src = "https://i.imgur.com/5D2wFPT.gif">
 
-* Database initialization
+<h2>Features</h2>
+*   CRUD
 
-* How to run the test suite
+<h2>💻 Built with</h2>
 
-* Services (job queues, cache servers, search engines, etc.)
+Technologies used in the project:
 
-* Deployment instructions
-
-* ...
+*   Ruby Programming Language
+*   Rails Framework with Embedded Ruby HTML
+*   Rails Scaffolding
+*   TailwindCSS (non-template)
+*   PostgreSQL
