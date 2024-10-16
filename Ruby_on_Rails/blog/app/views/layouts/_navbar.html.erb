@@ -1,0 +1,35 @@
+<div class="fixed flex flex-row justify-between items-center w-full h-20 z-10 bg-white bg-opacity-10 mt-0 mb-5">
+  <!-- Logo Section -->
+  <div class="flex-wrap justify-start">
+    <%= link_to root_path do %>
+      <%= image_tag asset_path('rubbit.png'), class: "h-10 ml-4 rounded-full", alt: "Logo" %>
+    <% end %>
+  </div>
+
+  <!-- Dropdown Menu -->
+  <div class="relative ml-auto">
+    <input type="checkbox" id="dropdown-toggle" class="hidden" />
+    <label for="dropdown-toggle" class="bg-transparent text-rose-600 font-semibold py-1 px-4 mr-2 rounded inline-flex items-center cursor-pointer">
+      <span>Menu</span>
+      <svg class="fill-current h-4 w-4 ml-2" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+        <path d="M5.5 8l4.5 4.5L15.5 8l-1.5-1.5L10 10.5 6 6.5z" />
+      </svg>
+    </label>
+    <%= render 'user/session_manager'%>
+  </div>
+</div>
+
+<% if notice || alert %>
+  <div class="text-rose-400 fixed top-24 flex bg-transparent rounded-full justify-center items-center w-full p-2 text-xl">
+    <p class="flex justify-center h-fit w-fit"><%= notice %></p>
+    <p class="flex justify-center h-fit w-fit"><%= alert %></p>
+  </div>
+<% end %>
+
+<!-- CSS to show/hide dropdown -->
+<style>
+  /* Show dropdown when checkbox is checked */
+  #dropdown-toggle:checked + label + .dropdown-content {
+    display: block; /* Show dropdown */
+  }
+</style>

@@ -1,0 +1,33 @@
+<div class= "flex h-screen w-screen bg-cover bg-[url('<%=asset_path('idx.gif')%>')]">
+  <div class="text-white my-auto mx-auto md:w-2/3 w-screen h-fit flex flex-col bg-black rounded-3xl bg-opacity-90 p-8">
+    
+
+    <% content_for :title, "Posts" %>
+
+    <div class="flex mb-10 justify-center">
+      <h1 class="font-bold text-4xl">Posts</h1>
+    </div>
+
+    <div id="posts" class="flex flex-col min-w-full">
+      <%if @posts.any? %>
+      <% @posts.each do |post| %>
+        <%= render post %>
+        <p>
+          <%= link_to "Show this post", post, class: " ml-12 rounded-lg py-3 px-5 bg-red-700 mb-20 inline-block font-medium" %>
+        </p>
+        <% end %>
+      <% else %>
+      <div class="my-5 text-center text-red-500">
+        <strong class="font-bold">No Posts Available</strong>
+      </div>
+      <% end %>
+    </div>
+  
+  </div>
+   <div class="flex justify-end items-end mr-10 mb-10">
+    <%= link_to "New post", new_post_path, class: "rounded-lg py-2 px-5 bg-red-600 text-white block font-medium" %>
+  </div>
+  
+</div>
+
+

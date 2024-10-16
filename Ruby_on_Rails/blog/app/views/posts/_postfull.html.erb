@@ -1,0 +1,16 @@
+  <div id="<%= dom_id post %>">
+    <p class="my-5">
+      
+      <strong class="flex font-extrabold mb-2 text-rose-700 text-4xl"><%= post.title%></strong>
+      <strong class="flex font-extrabold mb-2 text-rose-700 text-lg"><img src="<%= asset_path('logo.png') %>" class="h-5 w-5  mt-1">Posted by :  <%= post.user.username%></strong>
+      
+    </p>
+
+    <p class="my-5">
+      <strong class="block font-thin mb-1"><%= post.body %>:</strong>
+    </p>
+    <%if Post.count==0 %>
+    <%= "Post not available" %>
+    <%end%>
+
+  </div>

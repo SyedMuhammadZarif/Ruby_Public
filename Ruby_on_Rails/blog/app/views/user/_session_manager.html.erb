@@ -1,0 +1,13 @@
+<%if current_user %>
+<div class="dropdown-content absolute hidden bg-white bg-opacity-90 text-gray-700 rounded-lg shadow-lg mt-1 mr-2 transition-opacity duration-300 ease-in-out">
+    <%=link_to "Profile", new_user_registration_path, class:"nav-link"   %>
+    <%=link_to "Edit Profile", edit_user_registration_path, class:"dropdown-item"   %>
+    <%=button_to "Sign out", destroy_user_session_path, method: :delete, class:"dropdown-item" %>
+
+</div>
+<%else%>
+<div class="dropdown-content absolute hidden bg-white bg-opacity-90 text-gray-700 rounded-lg shadow-lg mt-1 mr-2 transition-opacity duration-300 ease-in-out">
+    <%=link_to "Sign in", new_user_session_path, class:"nav-link"   %>
+    <%=link_to "Sign Up", new_user_registration_path, class:"nav-link"   %>
+</div>
+<%end%>

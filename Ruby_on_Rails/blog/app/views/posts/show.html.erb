@@ -1,0 +1,36 @@
+<div class= "flex h-screen w-screen bg-cover bg-[url('<%=asset_path('idx.gif')%>')]">
+<div class="text-white my-auto mx-auto md:w-2/3 w-screen h-fit flex flex-col bg-black rounded-lg bg-opacity-90 p-8">
+  <div class= "flex">
+    <% if notice.present? %>
+      <p class="py-2 px-3 bg-green-50 mb-5 text-green-500 font-medium rounded-lg inline-block" id="notice"><%= notice %></p>
+    <% end %>
+    </div>
+  
+  <div class="flex justify-start">
+    
+
+    <%= render partial: 'postfull', locals:{post: @post}%> 
+                                      <!--instance    local   !-->  
+    </div>
+
+    <div class = "flex flex-row justify-between">
+    
+    
+    <div class = "flex justify-start ">
+    <%if @post.user == current_user %>  
+    <%= link_to "Edit this post", edit_post_path(@post), class: "mt-2 rounded-lg py-3 px-5 bg-green-600 inline-block font-medium" %>
+    <%end%>
+    <%= link_to "Back to posts", posts_path, class: "mt-2 ml-2 rounded-lg py-3 px-5 inline-block font-medium bg-orange-600" %>
+    </div>
+    
+    <%if @post.user == current_user %>  
+    <div class = "flex justify-end">
+    <%= button_to "Delete", @post, method: :delete, class: "mt-2 rounded-lg py-3 px-5 bg-red-700 font-medium b bg-red-600" %>
+    </div>    
+    <%end%>
+    </div>
+
+    </div>
+  </div>
+</div>
+</div>
