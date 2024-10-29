@@ -1,12 +1,4 @@
-#honestly if youre reading this
-#I do not know what I will do learning ruby
-#at max I guess Illl just make a portfolio website lol
-#I want to KMS
-#fuck Javascript and fuck its community
-#I cannot stand Javascript
-#...
-#now on with the series
-#oh and btw I've finished learning Ruby in 63 hours (including 8 hours sleeps and meals and showers and other activities)
+
 #Reflection System
 
 #Object_Introspection
